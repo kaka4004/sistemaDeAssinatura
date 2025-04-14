@@ -1,17 +1,17 @@
 package com.assinatura.dados;
 
-import com.assinatura.negocio.servicoAssinatura;
+import com.assinatura.negocio.ServicoAssinatura;
 import java.util.ArrayList;
 import java.util.List;
 
 public class AssinaturaRepositorio {
-    private List<servicoAssinatura> listaAssinaturas = new ArrayList<>();
+    private List<ServicoAssinatura> listaAssinaturas = new ArrayList<>();
 
-    public void adicionar(servicoAssinatura assinatura) {
+    public void adicionar(ServicoAssinatura assinatura) {
         listaAssinaturas.add(assinatura);
     }
 
-    public List<servicoAssinatura> listar() {
+    public List<ServicoAssinatura> listar() {
         return new ArrayList<>(listaAssinaturas);
     }
 }

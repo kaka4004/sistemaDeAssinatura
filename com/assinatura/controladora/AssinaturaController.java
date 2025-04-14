@@ -1,17 +1,17 @@
 package com.assinatura.controladora;
 
 import com.assinatura.negocio.Assinatura;
-import com.assinatura.negocio.servicoAssinatura;
+import com.assinatura.negocio.ServicoAssinatura;
 import java.util.ArrayList;
 
 public class AssinaturaController {
-    private ArrayList<servicoAssinatura> assinaturas;
+    private ArrayList<ServicoAssinatura> assinaturas;
 
     public AssinaturaController() {
         this.assinaturas = new ArrayList<>();
     }
 
-    public void cadastrarAssinatura(servicoAssinatura assinatura) {
+    public void cadastrarAssinatura(ServicoAssinatura assinatura) {
         if (assinatura != null) {
             assinaturas.add(assinatura);
             System.out.println("Assinatura cadastrada com sucesso.");
@@ -25,7 +25,7 @@ public class AssinaturaController {
             System.out.println("Nenhuma assinatura cadastrada.");
             return;
         }
-        for (servicoAssinatura a : assinaturas) {
+        for (ServicoAssinatura a : assinaturas) {
             if (a instanceof Assinatura) {
                 Assinatura ass = (Assinatura) a;
                 System.out.println("Cliente: " + ass.getCliente() +
@@ -37,7 +37,7 @@ public class AssinaturaController {
 
     public double calcularTotalMensalidadeCliente(String cliente) {
         double total = 0.0;
-        for (servicoAssinatura a : assinaturas) {
+        for (ServicoAssinatura a : assinaturas) {
             if (a instanceof Assinatura) {
                 Assinatura ass = (Assinatura) a;
                 if (ass.getCliente().equalsIgnoreCase(cliente)) {

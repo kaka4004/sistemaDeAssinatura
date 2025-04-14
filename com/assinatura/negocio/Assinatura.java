@@ -1,6 +1,6 @@
 package com.assinatura.negocio;
 
-public abstract class Assinatura implements servicoAssinatura {
+public abstract class Assinatura implements ServicoAssinatura {
     private String cliente;
     private int duracaoMeses;
 

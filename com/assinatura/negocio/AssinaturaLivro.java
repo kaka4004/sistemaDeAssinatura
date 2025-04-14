@@ -1,6 +1,5 @@
 package com.assinatura.negocio;
-
-import com.assinatura.excecoes.QuantidadeInvalidaException;
+import com.assinatura.Excecoes.QuantidadeInvalidaException;
 
 public class AssinaturaLivro extends Assinatura {
     private int livrosLidos;

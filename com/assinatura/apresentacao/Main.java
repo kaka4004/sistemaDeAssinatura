@@ -32,7 +32,7 @@ public class Main {
                     System.out.print("Duração (meses): ");
                     int duracao = scanner.nextInt();
 
-                    servicoAssinatura assinatura = null;
+                    ServicoAssinatura assinatura = null;
                     switch (tipo) {
                         case 1:
                             System.out.print("Telas extras: ");
